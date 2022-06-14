@@ -1,4 +1,99 @@
-.bi {
-    width: 100px;
-    height: 100px;
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: #ede4e0;
+    padding: 20px;
+    margin: -10px -10px -10px -10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    float: left;
+}
+
+.logo-nav {
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.logo {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+    background-color: #ede4e0;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ede4e0;
+}
+
+.nav-menu a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-menu a:active {
+    text-decoration: none;
+    border-radius: 3em;
+    background-color: lightblue;
+    border: solid;
+    box-shadow: 1px 3px;
+}
+
+.nav-item {
+    display: block;
+    margin-right: 50px;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    float: right;
+    font-size: 15px;
+}
+
+.social-nav {
+    border: solid;
+    border-radius: 3em;
+    background-color: lightblue;
+    box-shadow: 1px 3px;
+}
+
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.front-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: lightblue;
+}
+
+.place-desc {
+    margin-top: 60px;
+}
+
+.place-desc2 {
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+.placeholder {
+    width: 600px;
+    height: 600px;
 }
