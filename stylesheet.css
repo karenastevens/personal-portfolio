@@ -97,3 +97,9 @@ li {
     width: 600px;
     height: 600px;
 }
+
+.page-headers {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Nunito', sans-serif;
+}
