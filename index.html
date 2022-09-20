@@ -2,12 +2,15 @@
 <html>
     <head>
         <link rel="stylesheet" href="static/styles/stylesheet.css" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap">
+       <!-- Favicon -->
+       <link rel="icon" type="image/x-icon" href="{{ favicon }}">
+       <!-- Bootstrap CSS -->
+       <script src="https://kit.fontawesome.com/a2f275854f.js" crossorigin="anonymous"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Bootstrap Icon CSS-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <!--Bootstrap CSS-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-
-        <script src="https://kit.fontawesome.com/a2f275854f.js" crossorigin="anonymous"></script>
 
         <script src="myscripts.js"></script>
 
@@ -43,9 +46,13 @@
                 <img src="static/styles/placeholder.png" class="placeholder">
             </div>
             <div class="place-desc">
-                <h3>TITLE PROJECT</h3>
-                <i class="bi bi-link"></i><p>projecturl.com</p>
-                <p>Lorem ipsum - project description.</p>
+                <h3>TRENDING PLAYS</h3>
+                <p><i class="fa-solid fa-link"></i> <a href="www.trendingplays.com">www.trendingplays.com</a></p>
+                <p><i class="fa-brands fa-github"></i> <a href="https://github.com/karenastevens/trendingplays_"> Github Repo</a></p>
+                <p>&#10084 <strong>What is it? </strong>Web-app created using Python/Flask, HTML & CSS.</p>
+                <p>&#10084 <strong>What does it do? </strong>Utilizes Twitter API v2 to display the top 10 trending stocks on Twitter.</p>
+                <p>&#10084 <strong>How does it work? </strong>An event scheduler is set up to run a script each week that pulls the weekly tweet count for each ticker, updating it in the database. The web app, in turn, pulls and displays the most recent top 10 counts from the database upon each visit.</p>
+                <p>&#10084 <strong><em>Upcoming Features!</em></strong> User will be able to click each ticker to view an informational page with basic stock info as well as see recent news.</p>
             </div>
         </div>
         <hr>
@@ -56,7 +63,7 @@
                 <p>Lorem ipsum - project description.</p>
             </div>
             <div>
-                <img src="placeholder.png" class="placeholder">
+                <img src="static/styles/placeholder.png" class="placeholder">
             </div>
         </div>
         <div id="about">
