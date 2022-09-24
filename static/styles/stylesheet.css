@@ -103,6 +103,12 @@ li {
     height: 600px;
 }
 
+.project-img {
+    width: 600px;
+    height: 600px;
+    border: 5px;
+}
+
 .page-headers {
     text-align: center;
     font-size: 60px;
