@@ -114,3 +114,12 @@ li {
     font-size: 60px;
     font-family: 'Nunito', sans-serif;
 }
+
+/* footer styles */
+footer {
+    background-color: #ede4e0;
+    font-size: small;
+    padding: 20px 0px 20px 0;
+    text-align: center;
+    margin-top: -15px;
+}
