@@ -2,8 +2,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="static/styles/stylesheet.css" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap">
-       <!-- Favicon -->
-       <link rel="icon" type="image/x-icon" href="{{ favicon }}">
        <!-- Bootstrap CSS -->
        <script src="https://kit.fontawesome.com/a2f275854f.js" crossorigin="anonymous"></script>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +14,25 @@
     </head>
     <body>
         <!--Header Code-->
-        <header class="nav">
-            <ul class="logo-nav">
-                <li><a href="index.html" class="logo">KARENA STEVENS</a></li>
-            </ul>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-item">Home</a></li>
-                    <li><a href=#portfolio class="nav-item">Portfolio</a></li>
-                    <li><a href=#about class="nav-item">About</a></li>
-                    <li><a href=#contact class="nav-item">Get in Touch</a></li>
-                    <li><button class="social-nav"><a class="nav-item" target="_blank">LinkedIn</a></button></li>
-                    <li><button class="social-nav"><a href="https://github.com/karenastevens" class="nav-item" target="_blank">Github</a></button></li>
-                </ul>
+        <header>
+            <nav class="nav">
+                <a href="index.html" class="logo">KARENA STEVENS</a>
+
+                <div class="social-buttons">
+                    <button><a href="https://twitter.com/karenastevens_" target="_blank">Twitter <i class="fa-brands fa-square-twitter"></i></a></button>
+                    <button><a href="https://github.com/karenastevens" target="_blank">Github <i class="fa-brands fa-github"></i></a></button>
+                </div>
+
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="nav-menu hide">
+                    <a href="index.html">Home</a>
+                    <a href=#portfolio>Portfolio</a>
+                    <a href=#about>About</a>
+                    <a href=#contact>Get in Touch</a>
+                </div>
             </nav>
         </header>
 
@@ -71,14 +75,12 @@
         <div id="contact">
             <h2>Get in Touch...</h2>
         </div>
-
-        <hr>
-
+        </main>
         <footer>
             <div>
-                <p>Karena Stevens. 2022. <a href=https://twitter.com/karenastevens_ target="_blank"><i class="fa-brands fa-twitter"></i></a></p>
+                <p>Karena Stevens. 2022. <a href="https://twitter.com/karenastevens_" target="_blank"><i class="fa-brands fa-twitter"></i></a></p>
             </div>
         </footer>
-        </main>
     </body>
+    <script src="scripts.js"></script>
 </html>
