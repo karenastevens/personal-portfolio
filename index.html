@@ -2,77 +2,139 @@
 <html>
     <head>
         <link rel="stylesheet" href="static/styles/stylesheet.css" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap">
-       <!-- Favicon -->
-       <link rel="icon" type="image/x-icon" href="{{ favicon }}">
        <!-- Bootstrap CSS -->
        <script src="https://kit.fontawesome.com/a2f275854f.js" crossorigin="anonymous"></script>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Bootstrap Icon CSS-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <!--Bootstrap CSS-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <link href=
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity=
+        "sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
 
         <title>Karena Stevens</title>
     </head>
     <body>
         <!--Header Code-->
-        <header class="nav">
-            <ul class="logo-nav">
-                <li><a href="index.html" class="logo">KARENA STEVENS</a></li>
-            </ul>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-item">Home</a></li>
-                    <li><a href=#portfolio class="nav-item">Portfolio</a></li>
-                    <li><a href=#about class="nav-item">About</a></li>
-                    <li><a href=#contact class="nav-item">Get in Touch</a></li>
-                    <li><button class="social-nav"><a class="nav-item" target="_blank">LinkedIn</a></button></li>
-                    <li><button class="social-nav"><a href="https://github.com/karenastevens" class="nav-item" target="_blank">Github</a></button></li>
-                </ul>
+        <section class="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">KARENA STEVENS</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact Me</a>
+                            </li>
+                            <li class="nav-item"><button class="social-nav"><a href="https://twitter.com/karenastevens_"  class="nav-link" target="_blank">Twitter <i class="fa-brands fa-twitter"></i></a></button>
+                            </li>
+
+                            <li class="nav-item"><button class="social-nav"><a class="nav-link" href="https://github.com/karenastevens" target="_blank">Github <i class="fa-brands fa-github"></i></a></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-        </header>
+        </section>
 
        <main>
-        <!--Hero Image-->
-        <div>
-            <img src="static/styles/HERO.png" class="hero-img">
-        </div>
+        <!--Banner-->
+        <section id="banner">
+            <div class="container-fluid" id="banner-container">
+                <img class="img-responsive mx-auto d-block" src="static/styles/HERO.png" alt="">
+            </div>
+        </section>
 
         <!--Front Page Projects-->
-        <div class="front-projects" id="portfolio">
-            <div>
-                <img src="static/styles/tp_screenshot.png" class="project-img">
+        <section id="portfolio">
+            <h1 class="text-center">PORTFOLIO</h1>
+            <div class="container-fluid" id="portfolio-container">
+                <div class="row" id="banner-row">
+                    <div class="col-md-4" id="portfolio-col1">
+                        <img src="static/styles/tp_screenshot.png" class="img-fluid img-thumbnail rounded-circle mx-auto d-block" alt="..."/>
+                        <h3>Trending Plays - Web App</h3>
+                        <p>
+                            <i class="fa-solid fa-link"></i><a href="www.trendingplays.com">www.trendingplays.com</a></br>
+                            <i class="fa-brands fa-github"></i><a href="https://github.com/karenastevens/trendingplays_">Github Repo</a>
+                        </p>
+                        <p class="project-desc">
+                            <span>&#10084 <strong>What is it? </strong>Web-app created using Python/Flask, HTML, CSS & Docker</span></br></br>
+                            <span>&#10084 <strong>What does it do? </strong>Utilizes Twitter API v2 to display the top 10 trending stocks on Twitter.</span></br></br>
+                            <span>&#10084 <strong>How does it work? </strong>An event scheduler is set up to run a script each week that pulls the weekly tweet count for each ticker, updating it in the database. The web app, in turn, pulls and displays the most recent top 10 counts from the database upon each visit.</span></br></br>
+                            <span>&#10084 <strong><em>Upcoming Features!</em></strong> User will be able to click each ticker to view an informational page with basic stock info as well as see recent news.</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4" id="portfolio-col2">
+                        <img src="static/styles/placeholder.png" class="img-fluid img-thumbnail rounded-circle mx-auto d-block" alt="..."/>
+                        <h3>Calendar App</h3>
+                        <p>
+                            Calendar App Description
+                        </p>
+                    </div>
+                    <div class="col-md-4" id="portfolio-col3">
+                        <img src="static/styles/placeholder.png" class="img-fluid rounded-circle img-thumbnail mx-auto d-block" alt="..."/>
+                        <h3>Digital GlowUp - Web Design Agency Website</h3>
+                        <p>
+                            DGU website description
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="place-desc">
-                <h3>TRENDING PLAYS</h3>
-                <p><i class="fa-solid fa-link"></i> <a href="www.trendingplays.com">www.trendingplays.com</a></p>
-                <p><i class="fa-brands fa-github"></i> <a href="https://github.com/karenastevens/trendingplays_"> Github Repo</a></p>
-                <p>&#10084 <strong>What is it? </strong>Web-app created using Python/Flask, HTML, CSS & Docker</p>
-                <p>&#10084 <strong>What does it do? </strong>Utilizes Twitter API v2 to display the top 10 trending stocks on Twitter.</p>
-                <p>&#10084 <strong>How does it work? </strong>An event scheduler is set up to run a script each week that pulls the weekly tweet count for each ticker, updating it in the database. The web app, in turn, pulls and displays the most recent top 10 counts from the database upon each visit.</p>
-                <p>&#10084 <strong><em>Upcoming Features!</em></strong> User will be able to click each ticker to view an informational page with basic stock info as well as see recent news.</p>
-            </div>
-        </div>
-        <hr>
-        <div class="front-projects">
-            <div class="place-desc2">
-                <h3>TITLE PROJECT</h3>
-                <i class="bi bi-link"></i><p>projecturl.com</p>
-                <p>Lorem ipsum - project description.</p>
-            </div>
-            <div>
-                <img src="static/styles/placeholder.png" class="placeholder">
-            </div>
-        </div>
-        <div id="about">
-            <h2>About Me...</h2>
-        </div>
+        </section>
 
-        <div id="contact">
-            <h2>Get in Touch...</h2>
-        </div>
+        <!-- About Section-->
+        <section id="about">
+            <h1 class="text-center">About Me</h1>
+            <div class="container-fluid" id="about-container">
+                <div class="row" id="banner-row">
+                    <div class="col-md-6" id="about-col">
+                        <h3>Hi, I'm Karena!</h3>
+                        <ul>
+                            <li>
+                                &#10084 I am currently working as a freelance web developer, creating responsive, functional websites.
+                            </li>
+                            <li>
+                                &#10084 I spend large amounts of spare time working on personal projects to hone my backend software engineering skills. My languages of choice are Python and Javascript!
+                            </li>
+                            <li>
+                                &#10084 I graduated from The Pennsylvania State University with a Bachelor's Degree in Information Sciences and Technology.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6" id="banner-col2">
+                        <img
+                            class="img-responsive rounded-circle mx-auto" src="static/styles/portrait.png" alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <hr>
+        <section id="contact">
+            <h1 class="text-center">Get In Touch</h1>
+            <div class="d-grip gap-2 d-md-flex justify-content-center">
+                <div class="row align-items-center" id="contact-row">
+                    <div class="col-md-4 contact-col">
+                        <a href="https://twitter.com/karenastevens_" target="_blank"><i class="fa-brands fa-twitter" id="contact-icon"></i></a>
+                    </div>
+                    <div class="col-md-4 contact-col">
+                        <a href="mailto:karenastevens001@gmail.com"><i class="fa-solid fa-envelope" id="contact-icon"></i></a>
+                    </div>
+                    <div class="col-md-4 contact-col">
+                        <a href="https://calendly.com/karenastevens" target="_blank"><i class="fa-solid fa-calendar-days" id="contact-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer>
             <div>
@@ -80,5 +142,13 @@
             </div>
         </footer>
         </main>
+
+        <script
+        src=
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity=
+        "sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"
+        ></script>
     </body>
 </html>

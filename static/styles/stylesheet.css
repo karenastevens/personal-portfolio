@@ -1,71 +1,41 @@
 
-body {
-    font-family: 'Nunito', sans-serif;
-}
-
-header {
-    background-color: #ede4e0;
-    padding: 20px;
-    margin: -10px -10px -10px -10px;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-h2 {
-    text-align: center;
-}
-
-li {
-    float: left;
-}
-
-.logo-nav {
-    list-style-type: none;
-    text-decoration: none;
-    margin-top: 15px;
-}
-
-.logo {
-    font-size: 20px;
-    font-family: 'Nunito', sans-serif;
-    text-decoration: none;
-    color: black;
-    margin-top: 20px;
-    background-color: #ede4e0;
-}
-
-.nav-menu {
-    list-style-type: none;
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* navbar */
+
+.navbar-nav {
+    margin-right: 0 !important;
+    padding-right: 100px;
+}
+
+.navbar {
     background-color: #ede4e0;
+    color: white !important;
 }
 
-.nav-menu a:hover {
-    text-decoration: none;
-    color: inherit;
-}
-
-.nav-menu a:active {
-    text-decoration: none;
-    border-radius: 3em;
-    background-color: lightblue;
-    border: solid;
-    box-shadow: 1px 3px;
+.nav-item a {
+    color: white;
 }
 
 .nav-item {
-    display: block;
-    margin-right: 50px;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    float: right;
-    font-size: 15px;
+    padding-left: 2px;
+}
+
+.navbar-brand {
+    color: black !important;
+    padding-left: 100px;
+}
+
+#navbar-button {
+    color: white !important;
+}
+
+#navbarSupportedContent {
+    padding-left: 100px;
 }
 
 .social-nav {
@@ -73,48 +43,140 @@ li {
     border-radius: 3em;
     background-color: lightblue;
     box-shadow: 1px 3px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
+/* banner */
 
-.hero-img {
+#banner-container {
+    background-color: white;
+    color:white;
+    padding: 0;
+}
+
+#banner img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
-.front-projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+#banner-row img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    padding-left: 30px;
+}
+
+#banner-row h3, p {
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#banner-row a{
+    background-color: none;
+    color: black !important;
+    border: none;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#banner-col {
+    padding-left: 20px;
+}
+
+/* portfolio */
+
+#portfolio {
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: lightblue;
 }
 
-.place-desc {
-    margin-top: 60px;
-    margin-right: 10px;
+#portfolio h1 {
+    padding-bottom: 70px;
 }
 
-.place-desc2 {
-    margin-left: 60px;
-    margin-top: 60px;
+.project-desc {
+    text-align: left;
 }
 
-.placeholder {
-    width: 600px;
-    height: 600px;
+/* about */
+
+#about {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.project-img {
-    width: 600px;
-    height: 600px;
-    border: 5px;
+#about h1 {
+    padding-bottom: 40px;
 }
 
-.page-headers {
+#about-col ul {
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+#about-col ul li {
+    padding-top: 15px;
+    list-style-type: none;
+}
+
+/* contact */
+
+#contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: lightblue;
+}
+
+#contact h1 {
+    padding-bottom: 50px;
+}
+
+.contact-col {
     text-align: center;
-    font-size: 60px;
-    font-family: 'Nunito', sans-serif;
 }
 
+.contact-col a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-col a:hover i{
+    transform: translateY(-10px);
+}
+
+#contact-row {
+    flex-direction: row;
+}
+
+#contact-icon {
+    font-size: 50px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+
+/* media */
+
+@media only screen and (max-width: 987px) {
+    .navbar-brand{
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #banner-row img{
+        padding-top: 20px;
+    }
+
+    .contact-col {
+        width: 33%;
+    }
+}
 /* footer styles */
 footer {
     background-color: #ede4e0;
