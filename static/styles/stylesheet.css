@@ -124,6 +124,24 @@
     list-style-type: none;
 }
 
+/* case-study */
+
+#case-study {
+    padding: 80px 20px 80px 20px;
+    background-color: lightblue;
+}
+
+.img-responsive {
+    height: auto;
+    max-width: 100%;
+}
+
+#case-study h2 {
+    text-align: center;
+}
+
+
+
 /* contact */
 
 #contact {
