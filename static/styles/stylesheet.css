@@ -145,7 +145,13 @@
     padding-bottom: 40px;
 }
 
+.img-hover-grow {
+    transition: transform 0.3s ease;
+}
 
+.img-hover-grow:hover {
+    transform: scale(1.1); /* Scales the image to 110% of its original size */
+}
 
 /* contact */
 
