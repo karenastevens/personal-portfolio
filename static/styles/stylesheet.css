@@ -131,6 +131,18 @@
     background-color: lightblue;
 }
 
+#case-study p {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#case-study h4 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
 .img-responsive {
     height: auto;
     max-width: 100%;
@@ -151,6 +163,13 @@
 
 .img-hover-grow:hover {
     transform: scale(1.1); /* Scales the image to 110% of its original size */
+}
+
+.text-section {
+    background-color: rgba(255, 255, 255, 0.7); /* White with transparency */
+    border-radius: 10px; /* Rounded corners, adjust radius as needed */
+    padding: 20px; /* Add padding for spacing inside the box */
+    /* Add any other styling as needed */
 }
 
 /* contact */
@@ -205,6 +224,19 @@
 
     .contact-col {
         width: 33%;
+    }
+
+    .img-first {
+        order: 1; /* Image will be displayed first on mobile */
+        padding-bottom: 40px;
+    }
+
+    .text-first {
+        order: 2; /* Text will be displayed second on mobile */
+    }
+
+    #case-study h3 {
+        text-align: center;
     }
 }
 
